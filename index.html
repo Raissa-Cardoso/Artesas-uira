@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Raissa Eves Cardoso" />
+    <meta
+      name="description"
+      content="Site dos artesanatos do grupo de artesãs do Uirá"
+    />
+    <meta name="keywords" content="Artesanato" />
+    <title>Artesãs do Uirá</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="/scripts/index.js" defer></script>
+  </head>
+  <body id="home">
+    <div class="page">
+      <header class="pageTop">
+        <div class="menuMobile">
+          <a href="#home">
+            <img src="./assets/logotipo.svg" alt="Logotipo" id="logotipo" />
+          </a>
+          <button onclick="dropMenu()">
+            <img
+              src="/assets/menu.svg"
+              alt="Lista com três retas uma em cima da outra"
+            />
+          </button>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#home" onclick="menuSelected()" class="selected">
+                Início
+              </a>
+            </li>
+            <li><a href="#about" onclick="menuSelected()">Sobre</a></li>
+            <li><a href="#services" onclick="menuSelected()">Produtos</a></li>
+            <li>
+              <a
+                href="https://wa.me/5512982912053"
+                target="_blank"
+                onclick="menuSelected()"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="homeTitle">
+          <div class="animate-svg">
+            <svg height="90" aria-labelledby="svgDesc">
+              <title id="svgDesc">Artesãs do Uirá</title>
+              <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop
+                    offset="0%"
+                    style="stop-color: rgb(17, 41, 151); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="75%"
+                    style="stop-color: rgb(82, 12, 143); stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <text x="0" y="80" fill="url(#grad1)">Artesãs do Uirá</text>
+            </svg>
+          </div>
+        </div>
+        <section class="about hidden" id="about">
+          <h2>Bem-vindas (os)</h2>
+          <p>
+            Durante a pandemia, enquanto ficamos em isolamento social, começamos
+            a fazer vários artesanatos como um hobby familiar. E hoje, com sorte
+            nos tornaremos um negócio rentável.
+          </p>
+          <p>
+            Todas nós, mãe, filha, nora, sobrinhas, nos dedicamos para criar
+            nossos produtos com muito amor e carinho.
+          </p>
+          <p>
+            E esse site é a demonstração de todo esse trabalho. Divulgaremos
+            aqui todos os produtos de artesanato criados pelo grupo de artesãs
+            do Uirá.
+          </p>
+        </section>
+        <div class="services" id="services">
+          <figure class="card hidden">
+            <img
+              src="./assets/barro.jpg"
+              alt="Foto de mãos manipulando um pedaço de barro"
+            />
+            <figcaption class="servicesNames">
+              <h2>Artesanto em argila</h2>
+              <p>Bonecos</p>
+              <p>Objetos de cerâmica</p>
+            </figcaption>
+          </figure>
+          <figure class="card hidden">
+            <img
+              src="./assets/bordado.jpg"
+              alt="Foto de um bordado com flores e folhas"
+            />
+            <figcaption class="servicesNames">
+              <h2>Bordados</h2>
+              <p>Panos de prato</p>
+              <p>Toalhas de mesa</p>
+            </figcaption>
+          </figure>
+          <figure class="card hidden">
+            <img
+              src="./assets/passarinhos.jpg"
+              alt="Foto de mãos segurando passarinhos de tecido"
+            />
+            <figcaption class="servicesNames">
+              <h2>Enfeites de natal</h2>
+              <p>Passarinhos</p>
+              <p>Anjos</p>
+            </figcaption>
+          </figure>
+          <figure class="card hidden">
+            <img
+              src="./assets/trico.jpg"
+              alt="Foto de uma peça de tricô com uma agulha"
+            />
+            <figcaption class="servicesNames">
+              <h2>Tricô e Crochê</h2>
+              <p>Tapetes</p>
+              <p>Roupas</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="testimony">
+          <section class="testimonial desappear">
+            <q>
+              Conheci a Dona Sônia no ano passado e quando vi os artesanatos que
+              ela faz no grupo, me apaixonei. Comprei vários.
+            </q>
+            <span>Maria Ignacia de Jesus</span>
+          </section>
+          <section class="testimonial desappear">
+            <q>
+              Todos os produtos são feitos com muito amor. Sempre que tem uma
+              novidade, acabo comprando.
+            </q>
+            <span>Sara Priscila</span>
+          </section>
+          <section class="testimonial desappear">
+            <q> Comprei vários produtos e não me arrependo. </q>
+            <span>Francisca de Assis</span>
+          </section>
+        </div>
+      </main>
+      <footer id="contacts">
+        <div>
+          <h2>Entre em contato conosco</h2>
+          <div class="socialMedias">
+            <a href="mailto:artesanatouira@gmail.com"
+              ><img src="./assets/envelope.svg" alt="Ícone de um envelope"
+            /></a>
+            <a href="https://wa.me/5512982912053" target="_blank"
+              ><img src="./assets/whatsapp-logo.svg" alt="Logotipo do Whatsapp"
+            /></a>
+          </div>
+        </div>
+        <p>
+          <span>2023 &lowast; </span>Desenvolvido por
+          <a href="mailto:raissa_cardoso@yahoo.com.br"><strong>RC</strong></a>
+        </p>
+      </footer>
+    </div>
+    <div class="pageUp-wrapper hidden">
+      <a href="#home" onclick="menuSelected('home')"
+        ><img
+          src="./assets/page-up.svg"
+          alt="Imagem de uma seta para cima dentro de um círculo"
+      /></a>
+    </div>
+  </body>
+</html>
