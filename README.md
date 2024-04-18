@@ -8,7 +8,7 @@
 Este é um projeto criado para conclusão do curso de Desenvolvimento Web da Faculdade Anhanguera.
 O site retrata um grupo de artesãs fictício chamado: "Artesãs do Uirá".
 
-![Imagem do página inicial do projeto](./assets/Artesas-uira.png)
+![Imagem do página inicial do projeto](./assets/Artesas.png)
 
 ## :building_construction: Funcionalidades
 
